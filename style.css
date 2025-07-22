@@ -1,0 +1,445 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Karantina", system-ui;
+}
+
+
+/* SECTION HERO */
+
+.section-hero {
+    height: 87.9vh;
+    background-color: #3674B5;
+    position: relative;
+    overflow: hidden;
+    margin-top: 0.2px;
+}
+
+.header-desktop {
+    position: sticky;
+    top: 0;
+    z-index: 55;
+    background-color: #3674B5;
+    /* position: fixed; */
+    /* height: 8%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    /* border-bottom: 1px solid black; */
+}
+
+.header-desktop .logo p {
+    font-weight: bold;
+    font-size: 3rem;
+    color: wheat;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+
+
+.section-hero hr {
+    /* width: 70%; */
+    margin: 0 30px;
+    text-align: center;
+    opacity: 0.5;
+    font-weight: 100;
+}
+
+.header-desktop .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.header-desktop .nav-bar .links {
+    cursor: pointer;
+    text-decoration: none;
+    color: wheat;
+    font-weight: normal;
+    font-size: x-large;
+    transition: 0.3s;
+}
+
+.header-desktop .nav-bar a:hover {
+    color: #578FCA;
+    /* background-color: aqua; */
+}
+
+.section-hero .hero-content {
+    height: 87%;
+    padding: 0 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: brown; */
+    line-height: 5rem;
+    /* background-color: aquamarine; */
+
+}
+
+
+/* .hero-content .right-side{
+    width: 300px;
+    height: 300px;
+    background-color: burlywood;
+} */
+
+
+
+.hero-content .left-side .logo {
+    font-size: 8rem;
+    color: wheat;
+
+}
+
+.hero-content .left-side .slogan {
+    font-size: 3rem;
+    color: aliceblue;
+    letter-spacing: 0.7rem;
+    margin-top: 1rem;
+}
+
+.hero-content .left-side .section-hero-buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1.5rem;
+    margin-top: 1.8rem;
+}
+
+.hero-content .left-side .section-hero-buttons button {
+    padding: 20px;
+    width: 150px;
+    font-weight: normal;
+    font-size: large;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.hero-content .left-side .section-hero-buttons .reserver-btn {
+    background-color: transparent;
+    border: 1px solid wheat;
+    color: wheat;
+    transition: 0.3s;
+}
+
+.hero-content .left-side .section-hero-buttons .prices-btn {
+    color: #3674B5;
+    border: 1px solid wheat;
+    transition: 0.3s;
+}
+
+.hero-content .left-side .section-hero-buttons .prices-btn:hover {
+    background-color: transparent;
+    color: wheat;
+    transform: translateY(-8px);
+    box-shadow: 5px 10px 15px #578FCA;
+}
+
+.hero-content .left-side .section-hero-buttons .reserver-btn:hover {
+    background-color: white;
+    color: #3674B5;
+    /* transform: translateX(-15px); */
+    transform: translateY(-8px);
+    box-shadow: 5px 10px 15px #578FCA;
+}
+
+.hero-content .left-side .social-media-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-content .left-side .social-media-links a {
+    text-decoration: none;
+    color: wheat;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.hero-content .left-side .social-media-links a:hover {
+    color: #578FCA;
+}
+
+.hero-content .right-side img {
+    position: absolute;
+    left: 40%;
+    top: -8%;
+    /* background-color: burlywood; */
+}
+
+.responsive-menu {
+    display: none;
+}
+
+.responsive-header-burger_menu {
+
+    display: none;
+
+}
+
+
+.responsive-menu {
+    display: none;
+    position: fixed;
+    background-color: #ffffff;
+    /* height: 100vh; */
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    transform: translateX(0px);
+    /* animation: respo-menu 2s ease-in-out forwards; */
+}
+
+.respo-menu-animation {
+    animation: respo-menu 1.3s ease-in-out forwards;
+
+}
+
+.respo-menu-animation-out {
+    animation: respo-menu-out 1s ease-in-out forwards;
+}
+
+@keyframes respo-menu {
+    from {
+        transform: translateX(500px);
+    }
+
+    to {
+        transform: translateX(0px);
+    }
+}
+
+@keyframes respo-menu-out {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(500px);
+    }
+}
+
+@media screen and (max-width:400px) {
+    .responsive-header-burger_menu {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: #3674B5;
+
+        padding: 0 30px;
+        font-size: 2rem;
+        /* background-color: black; */
+        height: 4rem;
+    }
+
+    .nav_links-mobile {
+        /* background-color: black; */
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .nav_links-mobile a {
+        text-decoration: none;
+        font-size: 2rem;
+        transition: 0.3s;
+    }
+
+    .nav_links-mobile a:hover {
+        color: #578FCA;
+    }
+
+    .section-hero{
+        height: 100vh;
+    }
+
+    .header-desktop {
+        display: none;
+        /* visibility: hidden; */
+        /* background-color: black; */
+    }
+
+    .header-desktop hr {
+        display: none;
+    }
+
+    .hero-content {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .hero-content .left-side .slogan {}
+
+    .hero-content img {
+        /* display: none; */
+        visibility: hidden;
+    }
+
+    .hero-content .left-side .social-media-links {
+        justify-content: center;
+        margin-top: 1.5rem;
+    }
+    .section-hero .hero-content{
+        padding: 0 30px;
+    }
+}
+
+
+
+/* SECTION ABOUT_US */
+
+.section-about_us {
+    padding: 0 30px;
+    height: 100vh;
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section-about_us .left-side h1 {
+    font-size: 5rem;
+    color: #578FCA;
+    font-weight: bold;
+
+}
+
+.section-about_us .left-side .about_us-slogan {
+    font-size: 3rem;
+    color: #578FCA;
+    font-weight: 100;
+    letter-spacing: 0.5rem;
+    /* margin-bottom: 60px; */
+}
+
+.section-about_us .left-side {
+    width: 50%;
+
+}
+
+.section-about_us .left-side .about_us-description {
+    font-size: 1.5rem;
+    text-align: justify;
+    font-weight: 300;
+    color: #3674B5;
+    margin: 20px 0px;
+}
+
+.section-about_us .left-side .find_us-button {
+    padding: 20px;
+    width: 150px;
+    color: #578FCA;
+    font-weight: normal;
+    font-size: large;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid #3674B5;
+    transition: 0.3s;
+}
+
+.section-about_us .left-side .find_us-button:hover {
+    background-color: white;
+    color: #3674B5;
+    transform: translateX(-15px);
+    transform: translateY(-8px);
+    box-shadow: 5px 5px 50px #578FCA;
+    border: 1px solid white;
+}
+
+.section-about_us .about_us-right_side {
+    /* width: 50%; */
+    position: relative;
+}
+
+.about_us-right_side .about_us-image {
+
+    height: 450px;
+    width: 350px;
+    /* background-color: black; */
+    /* border: 1px solid black; */
+
+    background-image: url(images/image1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* box-shadow: 10px 10px 40px #578fca6b; */
+    transition: 0.5s;
+    /* filter: grayscale(100%); */
+}
+
+.about_us-right_side {
+    filter: grayscale(0%);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.about_us-right_side:hover .about_us-image {
+    filter: grayscale(100%);
+    transform: scale(1.1);
+
+}
+
+.about_us-right_side:hover .blank_border {
+    height: 350px;
+    width: 250px;
+    border: 1px solid wheat;
+
+}
+
+.section-about_us .blank_border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+    width: 350px;
+    background-color: transparent;
+    /* border: 1px solid wheat; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    transition: 0.5s;
+}
+
+.section-about_us .blank_border p {
+    opacity: 0;
+    font-size: 1.7rem;
+    color: black;
+    font-weight: 300;
+}
+
+.about_us-right_side:hover .blank_border p {
+    opacity: 1;
+}
+
+
+@media screen and (max-width:400px) {
+    .section-about_us {
+        /* padding: 0 30px; */
+        height: 100vh;
+        /* background-color: brown; */
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .section-about_us .about_us-right_side{
+        display: none;
+    }
+    .section-about_us .left-side{
+        width: 100%;
+    }
+}
