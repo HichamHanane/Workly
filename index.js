@@ -22,9 +22,9 @@ remove.onclick = () => {
 const about_link = document.getElementById('about_us-mobile');
 
 about_link.onclick = () => {
-    console.log('hiiii2');
     
     responsive_menu.classList.remove('respo-menu-animation');
     responsive_menu.classList.add('respo-menu-animation-out');
     responsive_menu.style.display = "none";
 }
+
