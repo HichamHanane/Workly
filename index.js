@@ -4,6 +4,8 @@ const show_menu = document.getElementById('show-responsive-menu');
 const responsive_menu = document.getElementById('resppo_menu');
 let remove = document.getElementById('remove');
 
+
+
 show_menu.onclick = () => {
     console.log("hello");
 
