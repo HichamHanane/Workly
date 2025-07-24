@@ -254,6 +254,7 @@
         gap: 0;
     }
 
+
     .nav_links-mobile a {
         text-decoration: none;
         font-size: 2rem;
@@ -265,8 +266,18 @@
     }
 
     .section-hero {
-        height: 100vh;
+        height: 80vh;
         width: 100%;
+        /* display: block; */
+    }
+
+    
+
+    .hero-content .left-side .section-hero-buttons {
+        /* padding: 20px; */
+        /* background-color: black; */
+        margin-right: 50px;
+        
     }
 
     .header-desktop {
@@ -292,7 +303,7 @@
     }
 
     .hero-content .left-side .social-media-links {
-        justify-content: center;
+        justify-content: flex-start;
         margin-top: 1.5rem;
     }
 
@@ -608,8 +619,9 @@
 .section-prices {
     height: 100vh;
     background-color: #232f3c;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     overflow: hidden;
+    padding-top: 50px;
 }
 
 .section_prices_header {
@@ -686,15 +698,15 @@
 }
 
 @media screen and (max-width:992px) {
-    .section-prices{
+    .section-prices {
         height: 100%;
         padding: 15px 30px;
         /* margin-bottom: 1rem; */
 
     }
-   
 
-    .section-prices .cards_container{
+
+    .section-prices .cards_container {
         display: flex;
         flex-direction: column;
         margin-top: 20px;
@@ -796,4 +808,114 @@
     justify-content: space-between;
     align-items: center;
     margin-top: 10px;
+}
+
+@media screen and (max-width:992px) {
+    .footer .first_footer .footer_nav_links{
+        display: none;
+    }
+
+    .footer .first_footer .logo_social_media .logo{
+        padding: 10px;
+        background-color: black;
+        font-size: 3.5rem;
+    }
+}
+
+
+
+.splide__slide {
+    visibility: visible;
+    /* background-color: #3674B5; */
+    object-fit: cover;
+    /* height: 700px; */
+}
+
+.splide__slide img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.splide {
+    width: 50%;
+    margin: 2rem auto;
+}
+
+
+
+
+.section_gallerie {
+    height: 100vh;
+    background-color: #232f3c;
+    margin-top: 5rem;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.section_gallerie_header {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.section_gallerie_header .section_gallerie_title {
+    font-weight: bold;
+    /* letter-spacing: 0rem; */
+    font-size: 5rem;
+    color: white;
+}
+
+.section_gallerie_header .section_gallerie_slogan {
+    color: #578FCA;
+    font-weight: 300;
+    font-size: 1.7rem;
+}
+
+
+@media screen and (max-width:992px) {
+    .section_gallerie {
+        height: 100vh;
+        padding: 15px 30px;
+
+        /* margin-bottom: 1rem; */
+
+    }
+
+    .section_gallerie .section_gallerie_header{
+        display: block;
+        margin-bottom: 8rem;
+    }
+
+    .splide {
+        width: 100%;
+        /* margin: 2rem auto; */
+    }
+
+
+    .section-prices .cards_container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 2rem;
+    }
+
+    .section-prices .cards_container .card {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+    }
+
+    .section-prices .cards_container .card .price1 {
+        font-size: 1.8rem;
+    }
+
+    .section-prices .cards_container .card .plan_name {
+        font-size: 2rem;
+    }
+
+    .section-prices .cards_container .feartures_plan_list {
+        font-size: 1.5rem;
+    }
 }
