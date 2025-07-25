@@ -23,53 +23,85 @@ remove.onclick = () => {
 
 const about_link = document.getElementById('about_us-mobile');
 
-about_link.onclick = () => {
 
+const remove_responsive_menu = () => {
     responsive_menu.classList.remove('respo-menu-animation');
     responsive_menu.classList.add('respo-menu-animation-out');
     responsive_menu.style.display = "none";
 }
 
 
+const scrollToNoTarifs = () => {
+    document.getElementById("prices").scrollIntoView({ behavior: "smooth" });
+}
+
+const find_us = () => {
+    window.open("https://maps.app.goo.gl/7E7Lupxa3sQ1cavM6", "_blank")
+}
+
+
 
 var splide = new Splide('#main-carousel', {
     pagination: false,
-    arrows:true
-    
-    
+    arrows: true
+
+
 });
-
-
-var thumbnails = document.getElementsByClassName('thumbnail');
-var current;
-
-
-for (var i = 0; i < thumbnails.length; i++) {
-    initThumbnail(thumbnails[i], i);
-}
-
-
-function initThumbnail(thumbnail, index) {
-    thumbnail.addEventListener('click', function () {
-        splide.go(index);
-    });
-}
-
-
-splide.on('mounted move', function () {
-    var thumbnail = thumbnails[splide.index];
-
-
-    if (thumbnail) {
-        if (current) {
-            current.classList.remove('is-active');
-        }
-
-
-        thumbnail.classList.add('is-active');
-        current = thumbnail;
-    }
-});
-
 
 splide.mount();
+
+// POPUP
+
+const button_remove_popup = document.getElementById('remove_popup');
+const popup_div = document.getElementById('popup');
+
+button_remove_popup.onclick = () => {
+
+    popup_div.style.display = "none"
+
+}
+
+
+const showPopup = () => {
+    popup_div.style.display = "block"
+}
+
+
+
+
+// SEND EMAIL
+
+const send_email_button = document.getElementById('send_email_button');
+
+const sendEmail = (e) => {
+    e.preventDefault();
+    const form = document.getElementById("contact-form");
+    let isLoading = true;
+    send_email_button.innerHTML = "Sending email...";
+    emailjs.sendForm("service_2er4y9j", "template_6h1bw03", form)
+        .then(
+            function (response) {
+                console.log("Email sent successfully!", response);
+                console.log('isLoading before :',isLoading);
+                
+                isLoading = false;
+                console.log('isLoading after :',isLoading);
+
+                send_email_button.innerHTML = "send";
+                form.reset();
+                popup_div.style.display = "none"
+                alert("Message sent successfully!");
+
+            },
+            function (error) {
+                console.error(" Email sending failed:", error);
+                alert("Failed to send message.");
+                isLoading = false;
+                form.reset();
+                popup_div.style.display = "none"
+            }
+        );
+    // popup_div.style.display = "none"
+}
+
+

@@ -271,13 +271,13 @@
         /* display: block; */
     }
 
-    
+
 
     .hero-content .left-side .section-hero-buttons {
         /* padding: 20px; */
         /* background-color: black; */
         margin-right: 50px;
-        
+
     }
 
     .header-desktop {
@@ -811,13 +811,12 @@
 }
 
 @media screen and (max-width:992px) {
-    .footer .first_footer .footer_nav_links{
+    .footer .first_footer .footer_nav_links {
         display: none;
     }
 
-    .footer .first_footer .logo_social_media .logo{
+    .footer .first_footer .logo_social_media .logo {
         padding: 10px;
-        background-color: black;
         font-size: 3.5rem;
     }
 }
@@ -876,14 +875,14 @@
 
 @media screen and (max-width:992px) {
     .section_gallerie {
-        height: 100vh;
+        height: 70vh;
         padding: 15px 30px;
 
         /* margin-bottom: 1rem; */
 
     }
 
-    .section_gallerie .section_gallerie_header{
+    .section_gallerie .section_gallerie_header {
         display: block;
         margin-bottom: 8rem;
     }
@@ -917,5 +916,138 @@
 
     .section-prices .cards_container .feartures_plan_list {
         font-size: 1.5rem;
+    }
+}
+
+
+
+#popup{
+    display: none;
+}
+.popup-section {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+    width: 100vw;
+    z-index: 999;
+    opacity: 0.9;
+}
+
+
+
+.form-contact {
+    position: fixed;
+    /* height: 75%; */
+    width: 40%;
+    background-color: #232f3c;
+    /* box-shadow: 5px 10px 15px white; */
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 9999;
+    opacity: 1;
+    padding: 20px;
+}
+
+.form-contact .header_form {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.form-contact .header_form i {
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1rem; 
+    margin-top: 30px;
+    transition: 0.3s;
+}
+
+.form-contact .header_form i:hover{
+    color: #578FCA;
+}
+
+.form_title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: 300;
+    letter-spacing: 0.5rem;
+}
+
+.description_form {
+    font-size: 1rem;
+    font-weight: 200;
+    color: #3674B5;
+}
+
+.form-contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+
+}
+
+.form-contact form input {
+    font-size: 1.5rem;
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid white;
+    outline: none;
+    /* border: none; */
+    padding: 15px;
+    /* box-shadow: 0px 10px 20px #ffffff; */
+    /* border-radius: 10px; */
+}
+
+.form-contact form textarea {
+    color: #ffffff;
+    font-size: 1.2rem;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 15px;
+    /* border-radius: 10px; */
+}
+
+.form-contact form button {
+    margin: 0 auto;
+    width: 40%;
+    padding: 10px;
+    background-color: #3674B5;
+    border: none;
+    /* border-radius: 10px; */
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-contact form button:hover {
+    background-color: transparent;
+    border: 1px solid white;
+}
+
+
+@media screen and (max-width:992px) {
+    .form-contact {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .form-contact form{
+        margin:  10px;
+    }
+
+    .form-contact .form_title{
+        margin: 0 10px;
+    }
+    .form-contact .description_form{
+        margin: 0 10px;
     }
 }
