@@ -1,6 +1,6 @@
-# 💼 Workly – Site vitrine pour espace de coworking
+# Workly – Site vitrine pour espace de coworking
 
-## 🧭 Contexte du projet
+## Contexte du projet
 
 Workly est un nouvel espace de coworking basé à Casablanca, dédié aux freelances et startups.  
 Dans le cadre de notre bootcamp, nous avons développé un site vitrine statique moderne et responsive pour présenter ses services, ses offres et ses valeurs.
@@ -13,7 +13,7 @@ Ce projet vise à :
 
 ---
 
-## 🎯 Objectifs pédagogiques
+## Objectifs pédagogiques
 
 - Concevoir une maquette responsive avec Figma
 - Structurer un site en HTML5 sémantique
@@ -26,29 +26,29 @@ Ce projet vise à :
 
 ---
 
-## ⚙️ Stack technique & outils utilisés
+## Stack technique & outils utilisés
 
-| Technologie | Utilisation |
-|-------------|-------------|
-| `HTML5`     | Structure des pages |
-| `CSS3`      | Stylisation personnalisée |
-| `JavaScript (ES6)` | Interactions frontend |
-| [`AOS`]     | Animations au scroll |
-| [`EmailJS`] | Envoi d’e-mails via le formulaire de contact |
-| `Figma`     | Maquette Desktop & Mobile |
-| `GitHub`    | Versioning du code et travail collaboratif |
+
+
+`HTML5`   :   Structure des pages 
+`CSS3`    :   Stylisation personnalisée 
+`JavaScript (ES6)` : Interactions frontend 
+`AOS`   :   Animations au scroll 
+`EmailJS` : Envoi d’e-mails via le formulaire de contact 
+`Figma`   :   Maquette Desktop & Mobile 
+`GitHub`  :   Versioning du code et travail collaboratif 
 
 ---
 
 ## 🧩 Fonctionnalités principales
 
-- ✅ **Header sticky** avec menu responsive (menu burger)
-- ✅ **Section présentation** avec texte et image
-- ✅ **Section “Nos espaces”** avec une galerie ou un carrousel
-- ✅ **Section “Tarifs”** claire avec offres présentées sous forme de cartes
-- ✅ **Bouton “Nous contacter”** qui ouvre une **modale avec formulaire**
-- ✅ **Animations au scroll** via AOS pour améliorer l’expérience utilisateur
-- ✅ **Formulaire de contact fonctionnel** grâce à EmailJS
+- Header sticky avec menu responsive (menu burger)
+- Section présentation avec texte et image
+- Section “Nos espaces” avec une galerie ou un carrousel
+- Section “Tarifs” claire avec offres présentées sous forme de cartes
+- Bouton “Nous contacter” qui ouvre une modale avec formulaire
+- Animations au scroll via AOS pour améliorer l’expérience utilisateur
+- Formulaire de contact fonctionnel grâce à EmailJS
 
 
 
